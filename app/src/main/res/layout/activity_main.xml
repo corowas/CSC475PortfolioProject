@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/addToListButton"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ImageButton
+        android:id="@+id/addToListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plusicon"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="Add to List" />
+
+    <ImageButton
+        android:id="@+id/startTimerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alarmicon"
+        android:background="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Add timer" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="00:00:00"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@id/startTimerButton"
+        android:layout_toEndOf="@id/startTimerButton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"/>
+
+</RelativeLayout>
